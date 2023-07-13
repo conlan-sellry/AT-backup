@@ -1,0 +1,199 @@
+/*  ==========================================================================
+    Globals (Mobile First)
+    ========================================================================== */
+
+/*
+    Padding and Margins
+    ========================================================================== */
+
+$padding: 40px; // Padding and margins
+
+/*
+    Widths and Heights
+    ========================================================================== */
+
+$w-container: 1600px;
+
+
+/*  ==========================================================================
+    Foundation
+    ========================================================================== */
+$grid-column-gutter: (
+    small: 40px,
+    medium: 40px,
+);
+
+$global-width: 9999px + map-get( $grid-column-gutter, medium );
+$grid-column-count: 20;
+$global-flexbox: false;
+$global-right: left;
+$global-left: left;
+$breakpoints: (
+    small: 0,
+    medium: 768px,
+    xmedium: 980px,
+    large: 1100px,
+    xlarge: 1400px,
+    xxlarge: 1800px,
+);
+$breakpoint-classes: (small medium xmedium large xlarge xxlarge);
+
+
+/*  ==========================================================================
+    Colours
+    ========================================================================== */
+
+// $colour-name-one: #1271db;
+// $colour-name-two: #233E5B;
+// $colour-name-three: #aaa;
+
+// Gray Scale
+$c-white: #fff;
+$c-silver: #ddd;
+$c-grey: #aaa;
+$c-light-grey: #f7f7f7;
+$c-dark-grey: #7f7f7f;
+$c-black: #000;
+//
+$c-red: #FF4136;
+$c-green: #2ECC40;
+$c-blue: #0074D9;
+$c-dark-blue: #1b191e;
+$c-orange: #FF851B;
+$c-yellow: yellow;
+
+// Color variables
+// $primary-color: $colour-name-one;
+// $secondary-color: $colour-name-two;
+// $tertiary-color: $colour-name-three;
+
+// Colours through-out - prefix with c-
+$c-bad: $c-red; // Bad color for errors, validation etc.
+$c-good: $c-green; // Good color for success etc.
+$c-info: $c-blue; // Good color for success etc.
+$c-warning: $c-orange; // Good color for success etc.
+$c-subtle: $c-grey; // Subtle color for subtle text
+
+
+$c-border: #eaeaea;
+
+/*
+    Fonts
+    ========================================================================== */
+
+$f-body: 'GT America', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$f-header: $f-body;
+$f-expanded: 'GT America Expanded', $f-body;
+$f-script: 'JaneAusten', $f-body;
+$f-serif: 'Tiempos Fine', serif;
+$f-pre: Monaco, Menlo, Consolas, "Courier New", monospace;
+$f-blockquote: Georgia, Times, "Times New Roman", serif;
+
+
+/**
+ *
+ * VS VARIABLES
+ *
+ */
+
+$VS10: 10px;
+$VS20: 20px;
+$VS30: 30px;
+$VS40: 40px;
+$VS50: 50px;
+$VS60: 60px;
+$VS70: 70px;
+$VS80: 80px;
+
+
+/*
+    Vertical Spacing
+    ========================================================================== */
+
+$VSM1: 20px;
+$VSM2: 25px;
+$VSM3: 30px;
+$VSM4: 35px;
+$VSM5: 40px;
+$VSM6: 45px;
+$VSM7: 50px;
+$VSM8: 65px;
+$VSM9: 70px;
+$VSM10: 75px;
+$VSM11: 90px;
+$VSM12: 100px;
+$VSM13: 110px;
+$VSM14: 140px;
+$VSM15: 150px;
+$VSM16: 165px;
+$VSM17: 175px;
+$VSM18: 150px;
+$VSM19: 200px;
+$VSM19b: 235px;
+$VSM20: 300px;
+
+
+
+
+$VSD1: 20px;
+$VSD2: 25px;
+$VSD3: 30px;
+$VSD4: 35px;
+$VSD5: 40px;
+$VSD6: 45px;
+$VSD7: 50px;
+$VSD8: 65px;
+$VSD9: 70px;
+$VSD10: 75px;
+$VSD11: 90px;
+$VSD12: 100px;
+$VSD13: 110px;
+$VSD14: 140px;
+$VSD15: 150px;
+$VSD16: 165px;
+$VSD17: 175px;
+$VSD18: 150px;
+$VSD19: 200px;
+$VSD19b: 235px;
+$VSD20: 300px;
+
+
+
+
+//40, 30, 35, 65, 89
+//165, 108, 211, 175, 74, 152, 141, 152, 144,
+
+
+
+
+
+$FSM1: 8px;
+$FSM1b: 10px;
+$FSM1c: 11px;
+$FSM2: 13px;
+//$FSM3: 14px;
+$FSM4: 14px;
+$FSM4b: 16px;
+$FSM5: 22px;
+$FSM6: 28px;
+
+$FSM8: 32px;
+$FSM9: 40px;
+$FSM10: 44px;
+
+
+$FSD1: 10px;
+$FSD1b: 12px;
+$FSD1c: 14px;
+$FSD2: 15px;
+//$FSD3: 16px;
+$FSD4: 18px;
+$FSD4b: 20px;
+$FSD5: 30px;
+$FSD6: 35px;
+
+$FSD8: 42px;
+$FSD9: 45px;
+$FSD10: 50px;
+
+

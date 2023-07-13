@@ -1,0 +1,266 @@
+#app, .app{
+  margin-top: 0;
+}
+
+body{
+  line-height: 25px;
+}
+
+.page-home{
+
+  h1, .h1 {
+
+    //$FSD6
+    @include v-spacing('font-size', 22px, 26px);
+    @include v-spacing('line-height', 30px, 36px);
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    font-family: $f-expanded;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  h2, h2.sans-serif, .h2.sans-serif {
+    //$FSD6
+    @include v-spacing('font-size', 22px, 26px);
+    @include v-spacing('line-height', 32px, 36px);
+    font-weight: 500;
+    text-transform: none;
+    letter-spacing: 0;
+    font-family: $f-serif;
+    color: $c-black;
+    margin: 0 0 19px 0;
+  }
+
+  p{
+      margin: 0 0 50px 0;
+      font-weight: 300;
+      line-height: 32px;
+  }
+  p:last-child{
+    margin-bottom: 0;
+  }
+
+  .intdent{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .c-AppLogo{
+        padding-bottom: 0 !important;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 70px;
+        width: 171px;
+
+
+    svg{
+      width: 100%;
+    }
+  }
+
+  .footer-logo .c-AppLogo{
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 204px;
+  }
+
+
+    .row{
+            margin: 0 20px;
+            //border:dotted red 1px;
+
+        @include breakpoint(medium){
+            margin: 0 auto 8vh auto;
+            max-width: 680px;
+
+        }
+    }
+
+    .row.v-center{
+        align-items: center;
+    }
+
+    .std-content{
+            padding-bottom: 86px;
+            border-bottom: 1px solid $c-silver;
+            margin-bottom: 100px;
+        @include breakpoint(medium){
+            // border: none;
+            // padding: 0;
+            // margin: 0;
+            //background: yellow;
+        }
+    }
+
+
+
+    .std-content-image--left{
+        margin: 0 0 46px -20px;
+    }
+    .std-content-image--right{
+        margin: 0 -20px 46px 0;
+    }
+    .std-content-image--full{
+        text-align: center;
+        margin: 0 -20px 100px -20px;
+    }
+    .std-content-image--left,
+    .std-content-image--right,
+    .std-content-image--full{
+        @include breakpoint(medium){
+            margin: 0 0 8vh 0;
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    .std-content.intro{
+            padding-bottom: 0;
+            border-bottom: 0;
+            border-bottom: 0;
+        @include breakpoint(medium){
+            padding-left: 0;
+        }
+    }
+
+  .name{
+    margin-bottom: 40px;
+    h1{
+      margin-bottom: 0;
+    }
+  }
+
+  .description{
+        margin-bottom: 120px;
+        padding: 0 20px;
+    @include breakpoint(medium){
+
+    }
+    h2{
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  .map{
+        margin-bottom: 75px;
+    @include breakpoint(medium){
+
+    }
+
+        .vue-map-container{
+                height: 400px;
+            @include breakpoint(medium){
+                height : 60vh;
+            }
+        }
+  }
+
+  .provenance{
+        margin-bottom: 100px;
+    @include breakpoint(medium){
+        margin: 0;
+    }
+
+    p{
+        @include v-spacing('font-size', 14px, 16px);
+        line-height: 24px;
+    }
+    h2{
+      margin: 0;
+      padding: 0 0 40px 0;
+      border-bottom: 1px solid $c-black;
+    }
+    p.step{
+      margin: 0;
+      padding: 40px 0;
+      border-bottom: 1px solid $c-grey;
+    }
+    p:empty{ display: none; }
+  }
+
+
+  .who-made-your-clothes-image{
+    margin: 0 0 38px -20px;
+  }
+
+  ol.stats{
+        margin: 10px 0 100px 0;
+        padding: 10px 20px;
+        counter-reset: item;
+        list-style: none;
+        background-color: $c-light-grey;
+
+    @include breakpoint(medium){
+        margin: 0;
+    }
+
+    li:before {
+        content: 'STAT. ' counter(item, decimal);
+        counter-increment: item;
+        text-transform: uppercase;
+        font-size: 10px;
+        letter-spacing: 2px;
+        display: block;
+        color: #000;
+        font-family: $f-expanded;
+    }
+
+    li{
+        padding-top: 24px;
+        margin-top: 24px;
+        border-top: 1px solid $c-silver;
+        p{
+            font-size: 14px;
+            line-height: 36px;
+        }
+    }
+    li:last-child{
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid $c-silver;
+    }
+  }
+
+  .comment-form{
+
+  }
+
+  .c-SocialLinks{
+      padding: 32px 20px 100px 20px;
+      margin: 0 -20px;
+      border-bottom: 1px solid $c-silver;
+      list-style: none;
+      li{
+          display: inline-block;
+          margin-right: 18px;
+      }
+  }
+
+  .footer-copyright{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 10px;
+      letter-spacing: 1px;
+      color: $c-dark-grey;
+      margin: 0 0 50px 0;
+  }
+
+  .c-MapKey{
+    .label{
+      @include v-spacing('font-size', 14px, 16px);
+      line-height: 14px;
+    }
+  }
+
+}
+
+button:hover{
+  cursor: pointer;
+
+}

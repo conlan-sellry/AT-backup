@@ -1,0 +1,76 @@
+/*  ==========================================================================
+    Base
+    ========================================================================== */
+
+html {
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $f-body;
+  @include v-spacing('font-size', $FSM4, $FSD4);
+  @include v-spacing('line-height', 36px, 36px);
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.8;
+
+  b, strong {
+    font-weight: 400;
+  }
+}
+
+//@TODO - move these   ....., .c-Figure__caption__text
+p, .p, a, li, .main-body-type,
+.c-Text, .c-Link {
+  @include v-spacing('font-size', $FSM4, $FSD4);
+  @include v-spacing('line-height', 36px, 36px);
+    font-weight: 300;
+}
+
+/*  ==========================================================================
+    Style Guide Classes
+    ========================================================================== */
+
+// REF - http://stackoverflow.com/questions/19099401/why-use-h1-instead-of-actual-h1
+// Use utility prefix if matching a class name to a style guide text style ie '.u-Quote' or 'u-ArticleHeading'
+
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4,
+  h5, .h5 {
+    font-family: $f-header;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0 25px;
+  }
+
+  h1, .h1 {
+    @include breakpoint( small ) {
+      @include v-spacing('font-size', $FSM8, $FSD8);
+      @include v-spacing('line-height', 40px, 40px);
+    }
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: $f-expanded;
+  }
+
+  h2, h2.sans-serif, .h2.sans-serif {
+    @include breakpoint( small ) {
+      @include v-spacing('font-size', $FSM6, $FSD6);
+      @include v-spacing('line-height', 40px, 50px);
+    }
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-family: $f-expanded;
+    text-transform: uppercase;
+    color: $c-white; //@TODO - shouldn't be here
+  }
+
+  h2.serif, .h2.serif, .c-Markdown h2 {
+    @include v-spacing('font-size', $FSM6, $FSD6);
+    @include v-spacing('line-height', 40px, 50px);
+    font-family: $f-serif;
+  }
+

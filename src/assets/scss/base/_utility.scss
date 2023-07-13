@@ -1,0 +1,252 @@
+/*  ==========================================================================
+    Helper
+    ========================================================================== */
+
+.u-Height--full {
+  height: 100vh;
+}
+
+.u-Height--half {
+  height: 50vh;
+}
+
+.u-uppercase {
+  text-transform: uppercase;
+}
+
+.u-font {
+  &--expanded {
+    font-family: $f-expanded;
+  }
+}
+
+.u-hidden {
+  overflow: hidden;
+}
+
+
+/*
+    Font Weight
+    ========================================================================== */
+
+.u-weight {
+  &--light {
+    font-weight: 300;
+  }
+
+  &--regular {
+    font-weight: normal;
+  }
+  
+  &--medium {
+    font-weight: 500;
+  }
+
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+/*
+    Text Align
+    ========================================================================== */
+
+.u-align {
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+/*
+    Text Color
+    ========================================================================== */
+
+.u-color {
+  &--primary {
+    color: $primary-color;
+  }
+
+  &--white {
+    color: $c-white;
+  }
+
+  &--yellow {
+    color: $secondary-color;
+  }
+
+  &--red {
+    color: red;
+  }
+}
+
+/*
+    Floats
+    ========================================================================== */
+
+.u-float {
+  &--right {
+    float: right;
+  }
+
+  &--left {
+    float: left;
+  }
+}
+
+
+/*
+    Background Color
+    ========================================================================== */
+
+.u-border {
+  &--top {
+    border-top: 1px solid rgba($c-black, 0.2);
+
+    &.u-bg--black {
+      border-color: rgba($c-white, 0.2);
+    }
+  }
+
+  &--bottom {
+    border-bottom: 1px solid rgba($c-black, 0.2);
+
+    &.u-bg--black {
+      border-color: rgba($c-white, 0.2);
+    }
+  }
+
+  &--right {
+    border-right: 1px solid rgba($c-black, 0.2);
+
+    &.u-bg--black {
+      border-color: rgba($c-white, 0.2);
+    }
+  }
+
+  &--left {
+    border-left: 1px solid rgba($c-black, 0.2);
+
+    &.u-bg--black {
+      border-color: rgba($c-white, 0.2);
+    }
+  }
+}
+
+/*
+    Background Color
+    ========================================================================== */
+
+.u-bg {
+  &--white {
+    background-color: $c-white;
+  }
+
+  &--lightgrey {
+    background-color: $c-light-grey;
+    /*@include v-spacing('padding-top', 20px, 100px);
+    @include v-spacing('padding-bottom', 20px, 100px);*/
+  }
+
+  &--black {
+    background-color: $c-black;
+    color: $c-white;
+
+    a,
+    .c-Link {
+      color: $c-white;
+    }
+  }
+
+  &--yellow {
+    background-color: $c-yellow;
+  }
+}
+
+/*
+    Position
+    ========================================================================== */
+
+.u-relative {
+  position: relative;
+}
+
+.u-absolute {
+  position: absolute;
+}
+
+.u-sticky {
+  position: sticky;
+  top: 50px;
+
+  &--0 {
+    top: 0;
+  }
+
+  &--half {
+    top: 50%;
+  }
+}
+
+/*
+    Display
+    ========================================================================== */
+
+    .u-display {
+      &--inline {
+        display: inline;
+      }
+
+      &--inline-block {
+        display: inline-block;
+      }
+
+      &--block {
+        display: block;
+      }
+
+      &--flex {
+        display: flex;
+      }
+    }
+
+/*
+    Vertical Align
+    ========================================================================== */
+
+.u-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+
+  &__cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.u-List--bare,
+%list-bare {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+
+/*
+    Vertical Align
+    ========================================================================== */
+
+.u-List {
+  &--inline {
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
