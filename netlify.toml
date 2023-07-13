@@ -1,0 +1,19 @@
+#[build]
+  #////command = "npm run build && npm run generate"
+  #functions = "lambda" #netlify-lambda reads this
+  #publish = "dist"
+
+[dev]
+   command = "yarn serve"
+   functions = "functions"
+# && cd functions/login && yarn
+[build]
+  command = "yarn build"
+  publish = "dist"
+  functions = "functions"
+
+[context.staging] # 'staging' is a branch name
+  command = "yarn build"
+  base = "staging"
+  publish = "dist"
+  functions = "functions"
